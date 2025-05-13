@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eufaula Lake - USACE</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: sans-serif;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    iframe {
+      width: 100%;
+      height: calc(100% - 70px);
+      border: none;
+    }
+    .fallback {
+      text-align: center;
+      padding: 2rem;
+    }
+    .fallback a {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #00529b;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>Eufaula Lake - USACE Page</header>
+  <iframe src="https://water.usace.army.mil/overview/swt/locations/eufa"
+          onerror="document.body.innerHTML = '<div class=\'fallback\'><p>Embedding is blocked. Click below to open the original USACE page.</p><a href=\'https://water.usace.army.mil/overview/swt/locations/eufa\' target=\'_blank\'>Go to USACE Page</a></div>';">
+  </iframe>
+</body>
+</html>
